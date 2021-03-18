@@ -48,7 +48,6 @@ export default function WeatherSearch() {
         {form}
         <p />
         <ul>
-          <li> <strong>{city} </strong> </li>
           <li> {Math.round(temperature)}ºC</li>
           <li> {(description).toUpperCase()} </li>
           <li>Humidity: {humidity}%</li>
