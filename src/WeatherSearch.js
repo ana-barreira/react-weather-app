@@ -36,9 +36,11 @@ export default function WeatherSearch() {
       <input
         type="Search"
         placeholder="Enter a city..."
+        autoFocus= "on"
         onChange={updateCity}
+
       />
-      <input type="Submit" defaultValue="Search" /> {""}
+      <input type="Submit" defaultValue="Search" />   {""}
       <input type ="Submit" defaultValue="Current" />
     </form>
   );

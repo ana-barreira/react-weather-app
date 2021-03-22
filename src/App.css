@@ -7,19 +7,20 @@
   margin: 0 auto;
   margin-top: 100px;
 }
-ul {
+
+.App ul {
   list-style: none;
   text-align: center;
   padding-left: 0px;
 }
 
-li img {
+.App li img {
   vertical-align: middle;
 }
-.footer {
+.App .footer {
   text-decoration: underline;
   color: blue;
 }
-.credits {
+.App .credits {
   text-align: center;
 }
