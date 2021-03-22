@@ -13,10 +13,11 @@
   text-align: center;
   padding-left: 0px;
 }
-
-.App li img {
-  vertical-align: middle;
+.App img {
+  display: block;
+  margin: 0 auto;
 }
+
 .App .footer {
   text-decoration: underline;
   color: blue;
