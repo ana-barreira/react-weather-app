@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from "axios";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import ReactLoader from "./ReactLoader";
+import FormattedDate from "./FormattedDate";
 
 export default function WeatherSearch(props) {
 
@@ -12,7 +13,7 @@ export default function WeatherSearch(props) {
    ready:true,
    temperature:response.data.main.temp,
    humidity: response.data.main.humidity,
-   date:"Monday 19:27",
+   date: new Date(response.data.dt*1000),
    description: response.data.weather[0].description,
    iconUrl:"https://ssl.gstatic.com/onebox/weather/64/partly_cloudy.png",
    wind:response.data.wind.speed,
@@ -33,7 +34,7 @@ export default function WeatherSearch(props) {
     <p />
     <h1>{WeatherData.city}</h1>
     <ul>
-      <li>{WeatherData.date}</li>
+      <li> <FormattedDate date={WeatherData.date} /></li>
       <li className="text-capitalize">{WeatherData.description}</li>
     </ul>
   <div className="data">
