@@ -2,7 +2,6 @@
   text-align: center;
 }
 .App {
-  text-align: center;
   border: solid black;
   max-width: 500px;
   border-radius: 1em;
@@ -10,17 +9,30 @@
   margin: 0 auto;
   margin-top: 100px;
 }
-
-.App ul {
+.App .SearchEngine {
+  text-align: center;
+}
+.App h1 {
+  text-align: center;
+}
+canvas {
+  display: block;
+  margin: 0 auto;
+}
+.App .description ul {
   list-style: none;
   text-align: center;
   padding-left: 0px;
 }
-.App img {
-  display: block;
-  margin: 0 auto;
+.App div .temperatureData ul {
+  text-align: center;
+  padding-left: 0;
 }
-
+.App .temperatureData ul li {
+  height: 30px;
+  list-style: none;
+  display: inline;
+}
 .App .footer {
   text-decoration: underline;
   color: blue;
