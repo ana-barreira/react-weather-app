@@ -31,7 +31,9 @@ canvas {
 .App .temperatureData ul li {
   height: 30px;
   list-style: none;
-  display: inline;
+}
+.App div .HumWinData {
+  text-align: center;
 }
 .App .footer {
   text-decoration: underline;
