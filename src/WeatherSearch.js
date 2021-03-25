@@ -47,7 +47,6 @@ setCity(event.target.value);
         autoFocus= "on"
         onChange={handleCityChange} />
       <input type="Submit" defaultValue="Search" />   {""}
-      <input type ="Submit" defaultValue=  "📍"/>
     </form>
     <p />
     <WeatherInfo data={WeatherData} />
