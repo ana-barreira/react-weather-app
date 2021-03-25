@@ -32,6 +32,9 @@ canvas {
   height: 30px;
   list-style: none;
 }
+.App div .WeatherTemperature {
+  text-align: center;
+}
 .App div .HumWinData {
   text-align: center;
 }
