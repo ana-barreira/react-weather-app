@@ -3,6 +3,7 @@ import axios from "axios";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
 import ReactLoader from "./ReactLoader";
 import WeatherInfo from "./WeatherInfo";
+import WeatherForecast from "./WeatherForecast";
 
 export default function WeatherSearch(props) {
 
@@ -46,10 +47,11 @@ setCity(event.target.value);
         autoFocus= "on"
         onChange={handleCityChange} />
       <input type="Submit" defaultValue="Search" />   {""}
-      <input type ="Submit" defaultValue=  "📍" />
+      <input type ="Submit" defaultValue=  "📍"/>
     </form>
     <p />
     <WeatherInfo data={WeatherData} />
+    <WeatherForecast city={WeatherData.city} />
   </div>
   );
 

@@ -14,8 +14,9 @@
 }
 .App h1 {
   text-align: center;
+  margin-top: 30px;
 }
-canvas {
+.App canvas {
   display: block;
   margin: 0 auto;
 }
