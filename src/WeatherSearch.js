@@ -41,12 +41,12 @@ setCity(event.target.value);
  return(
    <div className="Search">
     <form className="SearchEngine" onSubmit={handleSubmit}>
-      <input
+      <input className="searching"
         type="Search"
         placeholder="Enter a city..."
         autoFocus= "on"
-        onChange={handleCityChange} />
-      <input type="Submit" defaultValue="Search" />   {""}
+        onChange={handleCityChange} /> {""}
+      <input className="button" type="Submit" defaultValue="Search" />   
     </form>
     <p />
     <WeatherInfo data={WeatherData} />

@@ -2,12 +2,14 @@
   text-align: center;
 }
 .App {
-  border: solid black;
+  border: solid #adbac7;
   max-width: 500px;
-  border-radius: 1em;
+  border-radius: 0.5em;
   display: block;
   margin: 0 auto;
   margin-top: 100px;
+  background-color: #22272e;
+  color: #adbac7;
 }
 .App .SearchEngine {
   text-align: center;
@@ -15,6 +17,10 @@
 .App h1 {
   text-align: center;
   margin-top: 30px;
+  font-family: "Montserrat", sans-serif;
+  font-family: "Quicksand", sans-serif;
+  font-size: 50px;
+  color: #008cba;
 }
 .App canvas {
   display: block;
@@ -39,10 +45,28 @@
 .App div .HumWinData {
   text-align: center;
 }
-.App .footer {
-  text-decoration: underline;
-  color: blue;
+.App div a {
+  color: #edb554;
+  text-decoration: none;
 }
 .App .credits {
   text-align: center;
+  font-size: 12px;
+}
+.container .credits {
+  font-size: 12px;
+}
+
+.App div .button {
+  background-color: #22272e;
+  color: #adbac7;
+  border: solid #adbac7;
+  border-radius: 0.3em;
+}
+.App div .button:hover {
+  background-color: #adbac7;
+  color: #22272e;
+}
+.App div .searching {
+  border-radius: 0.3em;
 }
