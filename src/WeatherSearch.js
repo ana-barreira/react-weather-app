@@ -12,6 +12,7 @@ export default function WeatherSearch(props) {
   function handleResponse(response){
  setWeatherData({
    ready:true,
+   coordinates:response.data.coord,
    temperature:response.data.main.temp,
    humidity: response.data.main.humidity,
    date: new Date(response.data.dt*1000),
@@ -50,7 +51,7 @@ setCity(event.target.value);
     </form>
     <p />
     <WeatherInfo data={WeatherData} />
-    <WeatherForecast city={WeatherData.city} />
+    <WeatherForecast coordinates={WeatherData.coordinates} />
   </div>
   );
 

@@ -71,3 +71,9 @@
 .App div .searching {
   border-radius: 0.3em;
 }
+
+.App div .WeatherTemperature {
+  color: #edb554;
+  font-weight: bold;
+  font-size: 25px;
+}
