@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
 import "react-loader-spinner/dist/loader/css/react-spinner-loader.css";
-import ReactLoader from "./ReactLoader";
+import ReactLoader from "./ReactLoader"
 import WeatherInfo from "./WeatherInfo";
 import WeatherForecast from "./WeatherForecast";
 
@@ -47,7 +47,7 @@ setCity(event.target.value);
         placeholder="Enter a city..."
         autoFocus= "on"
         onChange={handleCityChange} /> {""}
-      <input className="button" type="Submit" defaultValue="Search" />   
+      <input className="button" type="Submit" defaultValue="Search" />  
     </form>
     <p />
     <WeatherInfo data={WeatherData} />
