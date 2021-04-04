@@ -15,22 +15,18 @@ function changeMode(){
 }
   
   return(
-    <div className="fullContainer">
-    <div className="header">
-    <label class="switch">
+    <div className="container">
+      <label class="switch">
   <input type="checkbox" onChange={changeMode} />
   <span class="slider round" />
-</label> </div>
-    <div className="container">
+</label>
     <div className={`App ${theme}`}>
       <p/> <p/> <br />
       <WeatherSearch defaultCity= "Braga"/>
     </div>
   
   <Credits />
-  </div>;
-  </div>)
- 
+  </div>);
 }
 
  
